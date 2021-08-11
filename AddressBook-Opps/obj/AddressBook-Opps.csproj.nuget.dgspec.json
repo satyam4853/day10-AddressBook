@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\Day9Problems\\AddressBook-Opps\\AddressBook-Opps\\AddressBook-Opps.csproj": {}
+    "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\day10 programmes\\AddressBook\\AddressBook-Opps\\AddressBook-Opps.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\Day9Problems\\AddressBook-Opps\\AddressBook-Opps\\AddressBook-Opps.csproj": {
+    "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\day10 programmes\\AddressBook\\AddressBook-Opps\\AddressBook-Opps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\Day9Problems\\AddressBook-Opps\\AddressBook-Opps\\AddressBook-Opps.csproj",
+        "projectUniqueName": "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\day10 programmes\\AddressBook\\AddressBook-Opps\\AddressBook-Opps.csproj",
         "projectName": "AddressBook-Opps",
-        "projectPath": "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\Day9Problems\\AddressBook-Opps\\AddressBook-Opps\\AddressBook-Opps.csproj",
+        "projectPath": "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\day10 programmes\\AddressBook\\AddressBook-Opps\\AddressBook-Opps.csproj",
         "packagesPath": "C:\\Users\\SATYAM VAISHNAV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\Day9Problems\\AddressBook-Opps\\AddressBook-Opps\\obj\\",
+        "outputPath": "C:\\Users\\SATYAM VAISHNAV\\fellowship_program\\day10 programmes\\AddressBook\\AddressBook-Opps\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SATYAM VAISHNAV\\AppData\\Roaming\\NuGet\\NuGet.Config",
