@@ -24,3 +24,16 @@ C:\Users\SATYAM VAISHNAV\fellowship_program\Day9Problems\AddressBook-Opps\Addres
 C:\Users\SATYAM VAISHNAV\fellowship_program\Day9Problems\AddressBook-Opps\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.dll
 C:\Users\SATYAM VAISHNAV\fellowship_program\Day9Problems\AddressBook-Opps\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.pdb
 C:\Users\SATYAM VAISHNAV\fellowship_program\Day9Problems\AddressBook-Opps\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.genruntimeconfig.cache
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\bin\Debug\netcoreapp3.1\AddressBook-Opps.exe
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\bin\Debug\netcoreapp3.1\AddressBook-Opps.deps.json
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\bin\Debug\netcoreapp3.1\AddressBook-Opps.runtimeconfig.json
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\bin\Debug\netcoreapp3.1\AddressBook-Opps.runtimeconfig.dev.json
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\bin\Debug\netcoreapp3.1\AddressBook-Opps.dll
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\bin\Debug\netcoreapp3.1\AddressBook-Opps.pdb
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.csproj.AssemblyReference.cache
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.AssemblyInfoInputs.cache
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.AssemblyInfo.cs
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.csproj.CoreCompileInputs.cache
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.dll
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.pdb
+C:\Users\SATYAM VAISHNAV\fellowship_program\day10 programmes\AddressBook\AddressBook-Opps\obj\Debug\netcoreapp3.1\AddressBook-Opps.genruntimeconfig.cache

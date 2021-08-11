@@ -1,58 +1,101 @@
-﻿using System;
+﻿using AddressBook_Opps;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace AddressBook_Opps
+namespace AddressBook
 {
-    class AddressBookDetails
+    public class AddressBookDetails
     {
 
-        private static List<Person> contacts = new List<Person>();
-        public static void AddMember()
+        private List<Person> contacts;
+        //address book dictioanry to store values
+        private static Dictionary<string, List<Person>> addressBookDictionary = new Dictionary<string, List<Person>>();
+        public void AddMember()
         {
-            //object for person class
-            Person person = new Person();
-
-            Console.Write("Enter First Name: ");
-            person.firstName = Console.ReadLine();
-            Console.Write("Enter Last Name: ");
-            person.lastName = Console.ReadLine();
-            Console.Write("Enter Address: ");
-            person.address = Console.ReadLine();
-            Console.Write("Enter City: ");
-            person.city = Console.ReadLine();
-            Console.Write("Enter State: ");
-            person.state = Console.ReadLine();
-            Console.Write("Enter Zip Code: ");
-            person.zipCode = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Email : ");
-            person.email = Console.ReadLine();
-            Console.Write("Enter Phone Number : ");
-            person.phoneNumber = Convert.ToInt32(Console.ReadLine());
-
-            contacts.Add(person);
-
-            Console.WriteLine("Successfully Added");
-        }
-
-        public static void ViewContacts()
-        {
-            if (contacts.Count > 0)
+            string addressBookName;
+            contacts = new List<Person>();
+            while (true)
             {
-                Console.WriteLine("/t /t /t Your Contact List Has");
-                foreach (var x in contacts)
+                Console.WriteLine("Enter The Name of the Address Book");
+                addressBookName = Console.ReadLine();
+                //Checking uniqueness of address books
+                if (addressBookDictionary.Count > 0)
                 {
-                    PrintValues(x);
-
+                    if (addressBookDictionary.ContainsKey(addressBookName))
+                    {
+                        Console.WriteLine("This name of address book already exists");
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    break;
                 }
 
+            }
+
+            Console.Write("Enter Number of contacts you want to add:");
+            int numOfContacts = Convert.ToInt32(Console.ReadLine());
+            while (numOfContacts > 0)
+            {
+                //object for person class
+                Person person = new Person();
+
+                Console.Write("Enter First Name: ");
+                person.firstName = Console.ReadLine();
+                Console.Write("Enter Last Name: ");
+                person.lastName = Console.ReadLine();
+                Console.Write("Enter Address: ");
+                person.address = Console.ReadLine();
+                Console.Write("Enter City: ");
+                person.city = Console.ReadLine();
+                Console.Write("Enter State: ");
+                person.state = Console.ReadLine();
+                Console.Write("Enter Zip Code: ");
+                person.zipCode = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter Phone Number: ");
+                double phNo = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Enter Email-id: ");
+                string emailId = Console.ReadLine();
+                contacts.Add(person);
+                Console.WriteLine("***************************************");
+                numOfContacts--;
+            }
+            //adding into address book dictionary
+            addressBookDictionary.Add(addressBookName, contacts);
+            Console.WriteLine("\t \t \tSuccessfully Added");
+        }
+
+        //method for view Contacts
+        public void ViewContacts()
+        {
+            if (addressBookDictionary.Count > 0)
+            {
+                //printing the values in address book
+                foreach (KeyValuePair<string, List<Person>> dict in addressBookDictionary)
+                {
+                    Console.WriteLine($"\t \t \t{dict.Key}");
+                    foreach (var addressBook in dict.Value)
+                    {
+                        PrintValues(addressBook);
+
+                    }
+                }
             }
             else
             {
                 Console.WriteLine("Address Book is Empty");
             }
+
         }
 
+        //Printing values
         public static void PrintValues(Person x)
         {
             Console.WriteLine($"First Name : {x.firstName}");
@@ -63,9 +106,10 @@ namespace AddressBook_Opps
             Console.WriteLine($"Zip Code: {x.zipCode}");
             Console.WriteLine($"Phone Number: {x.phoneNumber}");
             Console.WriteLine($"Email: {x.email}");
-
         }
-        public static void EditDetails()
+
+        //method for editing details
+        public void EditDetails()
         {
             int f;//flag variable
             if (contacts.Count > 0)
@@ -115,15 +159,14 @@ namespace AddressBook_Opps
                                     Console.WriteLine("\t \t \t MODIFIED");
                                     break;
                                 case 7:
-                                    Console.Write("Enter new Phone Number: ");
-                                    x.phoneNumber = Convert.ToInt32(Console.ReadLine());
-                                    Console.WriteLine("\t \t \t MODIFIED");
-                                    break;
 
+                                    Console.Write("Enter new Phone Number: ");
+                                    double phNo = Convert.ToDouble(Console.ReadLine());
+                                    break;
                                 case 8:
+
                                     Console.Write("Enter new Email-id: ");
-                                    x.email = Console.ReadLine();
-                                    Console.WriteLine("\t \t \t MODIFIED");
+                                    string emailId = Console.ReadLine();
                                     break;
                                 case 9:
                                     // to exit from main method
@@ -151,7 +194,7 @@ namespace AddressBook_Opps
         }
 
         //method for deleting conatcts
-        public static void DeleteDetails()
+        public void DeleteDetails()
         {
             int f = 0;
             if (contacts.Count > 0)
@@ -164,7 +207,7 @@ namespace AddressBook_Opps
                     if (deleteName.ToLower() == x.firstName.ToLower())
                     {
                         //removing from list
-                        Console.WriteLine("\t \t \tDELETED");
+                        Console.WriteLine("\t \t \t DELETED");
                         Console.WriteLine($"You have deleted {x.firstName} contact");
                         contacts.Remove(x);
                         f = 1;
@@ -182,6 +225,5 @@ namespace AddressBook_Opps
                 Console.WriteLine("Your contact list is empty");
             }
         }
-
     }
 }

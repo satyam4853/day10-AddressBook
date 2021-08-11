@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AddressBook_Opps
 {
-    class Person
+     public class Person
     {
         public string firstName { get; set; }
 
